@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+.skrull{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+nav li a{
+    text-decoration: none;
+    color:black;
+}
+
+.alien{
+    margin: 20px;
+}
+
+.tour{
+    width: 1500px;
+    margin-left: -10px;
+}
+
+button{
+    width:150px;
+    height:50px;
+    background-color: coral;
+    border: none;
+    border-radius: 30px;
+    color:black;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+.slider-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 500px;
+    overflow: hidden;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+.kevin{
+    background-image: url("../images/large-cinema-display.png");
+    width:960px;
+    height:100vh;
+    background-repeat: no-repeat;
+}
+
+.hero-tour {
+    background-image: url(../images/hero-tour.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 1500px;
+    height:800px;
+}
+
+.hero-tour h1 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.hero-tour h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-tour hr {
+    width: 500px;
+    height: 50px;
+    color: white;
+    border:2px solid red;
+}
+
+.hero-tour button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.merci {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pasmerci {
+    width: 500px;
+    background-color: green;
+}
+
+.pasmerci img {
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 2px 15px 2px #000000; 
+    box-shadow: 2px 2px 15px 2px #000000;
+}
+
+.after::before{
+    content: "''";
+    font-size: 4rem;
+}
+
+.section13 {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding:80px;
+}
+
+.footerfont ul li {
+    list-style-type: none;
+}
+
+.footerfont ul li a{
+    text-decoration: none;
+    color:gray;
+}
+
+.section13 h6{
+    padding-left: 40px;
+}
+
+hr {
+    border:2px solid black;
+    width: 300px;
+}
+
+.section-1 {
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-2 h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.section-2 h6 {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
